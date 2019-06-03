@@ -21,4 +21,4 @@ class Main_Page:
         if no_of_items == "empty":
             return 0
         else:
-            return int(cart_items.get_attribute("innerHTML"))
+            return int(no_of_items)

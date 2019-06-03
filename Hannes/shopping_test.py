@@ -14,7 +14,7 @@ class ShoppingTest(unittest.TestCase):
         self.driver = webdriver.Chrome("../chromedriver.exe")   
         self.driver.get('http://automationpractice.com')
         self.main_page = Main_Page(self.driver)
-        assert self.main_page.get_no_of_items_in_cart() == 0
+        ##assert self.main_page.get_no_of_items_in_cart() == 0
 
     def testAddFirstItemToCartFromSearch(self):
         search_results = self.main_page.search("dress")
